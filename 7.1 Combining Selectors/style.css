@@ -1,19 +1,25 @@
 /* Write your code here: */
-h1 , h2{
-    color: blueviolet;
+/* Group */
+h1,h2 {
+  color: blueviolet;
 }
 
-div.box > p.done{
-    color: firebrick;
+/* Child */
+.box > p {
+  color: firebrick;
 }
 
-ul.list > li.done{
-    color: green;
+/* Descendent */
+.box li {
+  color: blue;
 }
-ul.list > li{
-    color: blue;
+
+/* Chained */
+li.done {
+  color: green;
 }
-ul > p{
-    font-size: 0.5rem;
-    color: black;
+
+/* Multiple Combiners */
+ul p.done {
+  font-size: 0.5rem;
 }
